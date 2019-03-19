@@ -1,0 +1,6 @@
+Create SqlLocalDb instance called "basic"
+	a. go to command prompt (ctr+r and type cmd),
+	b. on command prompt type "SqlLocalDB create basic"
+	c. next type "SqlLocalDb start basic".
+
+eof
