@@ -51,11 +51,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicContext.cs" />
+    <Compile Include="CollectionExtensions.cs" />
     <Compile Include="Entities\Audit.cs" />
     <Compile Include="Entities\IAuditable.cs" />
+    <Compile Include="Entities\InsuredPerson.cs" />
     <Compile Include="Entities\Policy.cs" />
     <Compile Include="Entities\Policyholder.cs" />
     <Compile Include="FluentConfigurations\AuditConfiguration.cs" />
+    <Compile Include="FluentConfigurations\InsuredPersonConfiguration.cs" />
     <Compile Include="FluentConfigurations\PolicyConfiguration.cs" />
     <Compile Include="FluentConfigurations\PolicyholderConfiguration.cs" />
     <Compile Include="Program.cs" />

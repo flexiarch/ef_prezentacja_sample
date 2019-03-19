@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace EFBasics_3_Fluent.Entities
 {
@@ -8,7 +9,8 @@ namespace EFBasics_3_Fluent.Entities
         public string PolicyNumber { get; set; }
         public int Premium { get; set; }
         public virtual Policyholder Policyholder { get; set; }
+        public virtual ICollection<InsuredPerson> Insureds { get; set; } = new List<InsuredPerson>();
+
         public Audit Audit { get; set; }
-        public Audit Audit2 { get; set; }
     }
 }

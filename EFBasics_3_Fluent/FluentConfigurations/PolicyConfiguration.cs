@@ -37,6 +37,11 @@ namespace EFBasics_3_Fluent.FluentConfigurations
             ;
 
             HasOptional(ph => ph.Policyholder).WithRequired(p => p.Policy).WillCascadeOnDelete();
+
+            HasMany(ins => ins.Insureds)
+                .WithRequired(p => p.Policy)
+                .Map(fkmapping => fkmapping.MapKey("PolicyId"))
+                .WillCascadeOnDelete();
         }
     }
 }

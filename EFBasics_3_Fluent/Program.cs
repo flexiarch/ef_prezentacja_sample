@@ -1,10 +1,7 @@
 ﻿using EFBasics_3_Fluent.Entities;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static System.Console;
 
 namespace EFBasics_3_Fluent
@@ -21,7 +18,8 @@ namespace EFBasics_3_Fluent
             using (var ctx = new BasicContext())
             {
                 //insert
-                ctx.Policy.Add(new Policy
+                ctx.Policy
+                .Add(new Policy
                 {
                     PolicyNumber = "ABCDEF",
                     Premium = 123,
@@ -30,7 +28,13 @@ namespace EFBasics_3_Fluent
                         FirstName = "Adam",
                         LastName = "Testowy"
                     }
-                });
+                })
+                .Insureds.AddRange
+                (
+                    new InsuredPerson("Kasia", "Testowa", null),
+                    new InsuredPerson("Piotr", "Jakiś", new DateTime(1980, 5, 1))
+                );
+
                 ctx.SaveChanges();
 
                 //insert i modyfikacja
@@ -57,7 +61,6 @@ namespace EFBasics_3_Fluent
             using (var read = new BasicContext())
             {
                 var myPolicies = read.Policy.ToList();
-
             }
 
             WriteLine("...end");
