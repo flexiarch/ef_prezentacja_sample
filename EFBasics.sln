@@ -9,6 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFBasics_2_Annotation_1", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFBasics_2_Annotation_2", "EFBasics_2_Annotation_2\EFBasics_2_Annotation_2.csproj", "{FB0CFB6A-ADD8-4D9D-8025-AF3407D16B17}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basics", "Basics", "{ED5A7F25-6938-4E15-90A0-B85FE6CA7725}"
+	ProjectSection(SolutionItems) = preProject
+		How to start.txt = How to start.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFBasics_3_Fluent", "EFBasics_3_Fluent\EFBasics_3_Fluent.csproj", "{D2C2330A-9890-4DB9-873E-A0DDC4366292}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +34,19 @@ Global
 		{FB0CFB6A-ADD8-4D9D-8025-AF3407D16B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB0CFB6A-ADD8-4D9D-8025-AF3407D16B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB0CFB6A-ADD8-4D9D-8025-AF3407D16B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C2330A-9890-4DB9-873E-A0DDC4366292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C2330A-9890-4DB9-873E-A0DDC4366292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C2330A-9890-4DB9-873E-A0DDC4366292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C2330A-9890-4DB9-873E-A0DDC4366292}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A86D7764-38E2-45FF-9AD1-161B01F161D9} = {ED5A7F25-6938-4E15-90A0-B85FE6CA7725}
+		{EFC2C80A-84B9-4182-95A3-93BCF778D0A5} = {ED5A7F25-6938-4E15-90A0-B85FE6CA7725}
+		{FB0CFB6A-ADD8-4D9D-8025-AF3407D16B17} = {ED5A7F25-6938-4E15-90A0-B85FE6CA7725}
+		{D2C2330A-9890-4DB9-873E-A0DDC4366292} = {ED5A7F25-6938-4E15-90A0-B85FE6CA7725}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCACBF6E-E0C2-4055-A705-C34556EA58DF}
