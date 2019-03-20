@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basics", "Basics", "{ED5A7F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFBasics_3_Fluent", "EFBasics_3_Fluent\EFBasics_3_Fluent.csproj", "{D2C2330A-9890-4DB9-873E-A0DDC4366292}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFBasic_4_InheritanceStrategies", "EFBasic_4_InheritanceStrategies\EFBasic_4_InheritanceStrategies.csproj", "{2DFA726D-85CA-4B4A-B23D-4B3E4DE45EAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{D2C2330A-9890-4DB9-873E-A0DDC4366292}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2C2330A-9890-4DB9-873E-A0DDC4366292}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2C2330A-9890-4DB9-873E-A0DDC4366292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DFA726D-85CA-4B4A-B23D-4B3E4DE45EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DFA726D-85CA-4B4A-B23D-4B3E4DE45EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DFA726D-85CA-4B4A-B23D-4B3E4DE45EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DFA726D-85CA-4B4A-B23D-4B3E4DE45EAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{EFC2C80A-84B9-4182-95A3-93BCF778D0A5} = {ED5A7F25-6938-4E15-90A0-B85FE6CA7725}
 		{FB0CFB6A-ADD8-4D9D-8025-AF3407D16B17} = {ED5A7F25-6938-4E15-90A0-B85FE6CA7725}
 		{D2C2330A-9890-4DB9-873E-A0DDC4366292} = {ED5A7F25-6938-4E15-90A0-B85FE6CA7725}
+		{2DFA726D-85CA-4B4A-B23D-4B3E4DE45EAF} = {ED5A7F25-6938-4E15-90A0-B85FE6CA7725}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCACBF6E-E0C2-4055-A705-C34556EA58DF}
