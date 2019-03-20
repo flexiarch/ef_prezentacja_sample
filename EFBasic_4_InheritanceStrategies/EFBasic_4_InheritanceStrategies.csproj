@@ -51,11 +51,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicContext.cs" />
-    <Compile Include="EntitiesConfigurations\EntitiesConfigurations_for_TPT.cs" />
-    <Compile Include="EntitiesConfigurations\EntitiesConfigurations_for_TPH.cs" />
-    <Compile Include="Entities\Entities_for_TPT.cs" />
+    <Compile Include="EntitiesConfigurations\3. EntitiesConfigurations_for_TPC.cs" />
+    <Compile Include="EntitiesConfigurations\2. EntitiesConfigurations_for_TPT.cs" />
+    <Compile Include="EntitiesConfigurations\1. EntitiesConfigurations_for_TPH.cs" />
+    <Compile Include="Entities\3. Entities_for_TPC.cs" />
+    <Compile Include="Entities\2. Entities_for_TPT.cs" />
     <Compile Include="EntityBase.cs" />
-    <Compile Include="Entities\Entities_for_TPH.cs" />
+    <Compile Include="Entities\1. Entities_for_TPH.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

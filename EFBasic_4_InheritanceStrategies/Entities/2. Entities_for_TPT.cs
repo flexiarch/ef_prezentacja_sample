@@ -3,21 +3,21 @@
     /// <summary>
     /// abstrakcyjna!
     /// </summary>
-    public abstract class TptParameter : EntityBase
+    public abstract class Tpt_Parameter : EntityBase
     {
         public string CodeName { get; set; }
 
-        public TptParameter()
+        public Tpt_Parameter()
         {
         }
 
-        public TptParameter(string codeName)
+        public Tpt_Parameter(string codeName)
         {
             CodeName = codeName;
         }
     }
 
-    public class Tpt_ParameterString : TptParameter
+    public class Tpt_ParameterString : Tpt_Parameter
     {
         public string Value { get; set; }
 
@@ -31,7 +31,7 @@
         }
     }
 
-    public class Tpt_ParameterBoolean : TptParameter
+    public class Tpt_ParameterBoolean : Tpt_Parameter
     {
         public bool Value { get; set; }
 
@@ -45,7 +45,7 @@
         }
     }
 
-    public class Tpt_ParameterSpecial : TptParameter
+    public class Tpt_ParameterSpecial : Tpt_Parameter
     {
         public decimal RiskSum { get; set; }
         public bool SelectedOption { get; set; }

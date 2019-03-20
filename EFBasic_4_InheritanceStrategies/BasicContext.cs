@@ -9,14 +9,14 @@ namespace EFBasic_4_InheritanceStrategies
         public virtual DbSet<Entities.TPH.TphParameter> ParametersTph { get; set; }
 
         // tpt - table per type
-        public virtual DbSet<Entities.TPT.TptParameter> ParametersTpt { get; set; }
-
+        public virtual DbSet<Entities.TPT.Tpt_Parameter> ParametersTpt { get; set; }
 
         // tpc - table per concrette classe
+        public virtual DbSet<Entities.TPC.Tpc_Parameter> ParametersTpc { get; set; }
+
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<EntityBase>().HasKey(key => key.Id);
-
             modelBuilder.Configurations.AddFromAssembly(GetType().Assembly);
 
             base.OnModelCreating(modelBuilder);
