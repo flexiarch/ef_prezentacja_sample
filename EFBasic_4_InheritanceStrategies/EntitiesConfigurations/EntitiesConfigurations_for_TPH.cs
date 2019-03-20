@@ -3,18 +3,25 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace EFBasic_4_InheritanceStrategies.EntitiesConfigurations.TPH
 {
-    internal class ParameterConfiguration : EntityTypeConfiguration<Parameter>
+    internal class ParameterConfiguration : EntityTypeConfiguration<TphParameter>
     {
         public ParameterConfiguration()
         {
             ToTable("Parameters", "TPH");
 
             Property(p => p.CodeName).HasColumnName("CodeName")
-                .IsUnicode().HasMaxLength(64).IsRequired() ;
+                .IsUnicode().HasMaxLength(64).IsRequired();
+
+            //Ewentualna zmiana nazwy kolumny 'discriminator' i jej typu danych:
+            /*
+            Map<ParameterString>(p => p.Requires("Type").HasValue<int>(0));
+            Map<ParameterBoolean>(p => p.Requires("Type").HasValue<int>(1));
+            Map<ParameterSpecial>(p => p.Requires("Type").HasValue<int>(2));
+            */
         }
     }
 
-    internal class ParameterStringConfiguration : EntityTypeConfiguration<ParameterString>
+    internal class ParameterStringConfiguration : EntityTypeConfiguration<Tph_ParameterString>
     {
         public ParameterStringConfiguration()
         {
@@ -22,7 +29,7 @@ namespace EFBasic_4_InheritanceStrategies.EntitiesConfigurations.TPH
         }
     }
 
-    internal class ParameterBooleanConfiguration : EntityTypeConfiguration<ParameterBoolean>
+    internal class ParameterBooleanConfiguration : EntityTypeConfiguration<Tph_ParameterBoolean>
     {
         public ParameterBooleanConfiguration()
         {
@@ -30,7 +37,7 @@ namespace EFBasic_4_InheritanceStrategies.EntitiesConfigurations.TPH
         }
     }
 
-    internal class ParameterSpecialConfiguration : EntityTypeConfiguration<ParameterSpecial>
+    internal class ParameterSpecialConfiguration : EntityTypeConfiguration<Tph_ParameterSpecial>
     {
         public ParameterSpecialConfiguration()
         {

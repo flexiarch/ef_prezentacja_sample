@@ -3,58 +3,58 @@
     /// <summary>
     /// abstrakcyjna!
     /// </summary>
-    public abstract class Parameter : EntityBase
+    public abstract class TphParameter : EntityBase
     {
         public string CodeName { get; set; }
 
-        public Parameter()
+        public TphParameter()
         {
         }
 
-        public Parameter(string codeName)
+        public TphParameter(string codeName)
         {
             CodeName = codeName;
         }
     }
 
-    public class ParameterString : Parameter
+    public class Tph_ParameterString : TphParameter
     {
         public string Value { get; set; }
 
-        public ParameterString()
+        public Tph_ParameterString()
         {
         }
 
-        public ParameterString(string codeName, string value) : base(codeName)
+        public Tph_ParameterString(string codeName, string value) : base(codeName)
         {
             Value = value;
         }
     }
 
-    public class ParameterBoolean : Parameter
+    public class Tph_ParameterBoolean : TphParameter
     {
         public bool? Value { get; set; }
 
-        public ParameterBoolean()
+        public Tph_ParameterBoolean()
         {
         }
 
-        public ParameterBoolean(string codeName, bool? value) : base(codeName)
+        public Tph_ParameterBoolean(string codeName, bool? value) : base(codeName)
         {
             Value = value;
         }
     }
 
-    public class ParameterSpecial : Parameter
+    public class Tph_ParameterSpecial : TphParameter
     {
         public decimal? RiskSum { get; set; }
         public bool? SelectedOption { get; set; }
 
-        public ParameterSpecial()
+        public Tph_ParameterSpecial()
         {
         }
 
-        public ParameterSpecial(string codeName, decimal? riskSum, bool? selectedOption) : base(codeName)
+        public Tph_ParameterSpecial(string codeName, decimal? riskSum, bool? selectedOption) : base(codeName)
         {
             RiskSum = riskSum;
             SelectedOption = selectedOption;

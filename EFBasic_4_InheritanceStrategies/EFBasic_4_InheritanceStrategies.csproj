@@ -51,7 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicContext.cs" />
+    <Compile Include="EntitiesConfigurations\EntitiesConfigurations_for_TPT.cs" />
     <Compile Include="EntitiesConfigurations\EntitiesConfigurations_for_TPH.cs" />
+    <Compile Include="Entities\Entities_for_TPT.cs" />
     <Compile Include="EntityBase.cs" />
     <Compile Include="Entities\Entities_for_TPH.cs" />
     <Compile Include="Program.cs" />
