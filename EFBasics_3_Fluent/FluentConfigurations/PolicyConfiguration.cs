@@ -36,8 +36,13 @@ namespace EFBasics_3_Fluent.FluentConfigurations
                 .HasColumnOrder(3)
             ;
 
-            HasOptional(ph => ph.Policyholder).WithRequired(p => p.Policy).WillCascadeOnDelete();
+            // 1 to 0..1
+            //HasOptional(ph => ph.Policyholder).WithRequired(p => p.Policy).WillCascadeOnDelete();
 
+            // 1 to 1
+            HasRequired(ph => ph.Policyholder).WithRequiredPrincipal(p => p.Policy).WillCascadeOnDelete();
+
+            // 1 to *
             HasMany(ins => ins.Insureds)
                 .WithRequired(p => p.Policy)
                 .Map(fkmapping => fkmapping.MapKey("PolicyId"))
